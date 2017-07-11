@@ -31,6 +31,15 @@ var handlers = {
         this.emit(':tell', playerName + ' added to the roster.');
     },
 
+    'DecreaseScoreForIntent': function() {
+        var playerName = this.event.request.intent.slots.firstName.value;
+        var scoreAmount = this.event.request.intent.slots.scoreAmount.value;
+
+        state[playerName].score -= Number(scoreAmount);
+
+        this.emit(':tell', scoreAmount + ' removed from ' + playerName + ' score.');
+    },
+
     'IncreaseScoreForIntent': function() {
         var playerName = this.event.request.intent.slots.firstName.value;
         var scoreAmount = this.event.request.intent.slots.scoreAmount.value;

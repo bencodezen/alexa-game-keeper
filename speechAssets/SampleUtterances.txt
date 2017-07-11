@@ -2,6 +2,10 @@ AddPlayerIntent add player {firstName}
 AddPlayerIntent add {firstName}
 AddPlayerIntent new player {firstName}
 
+DecreaseScoreForIntent add negative {scoreAmount} points to {firstName} score
+DecreaseScoreForIntent subtract {scoreAmount} points from {firstName} score
+DecreaseScoreForIntent remove {scoreAmount} points from {firstName} score
+
 IncreaseScoreForIntent add {scoreAmount} points to {firstName} score
 
 GetScoreForIntent get score for {firstName}
