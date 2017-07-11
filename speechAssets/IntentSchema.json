@@ -10,6 +10,19 @@
       ]
     },
     {
+      "intent": "IncreaseScoreForIntent",
+      "slots": [
+          {
+            "name": "firstName",
+            "type": "AMAZON.US_FIRST_NAME"
+          },
+          {
+            "name": "scoreAmount",
+            "type": "AMAZON.NUMBER"
+          }
+      ]
+    },
+    {
       "intent": "GetScoreForIntent",
       "slots": [
           {

@@ -2,6 +2,8 @@ AddPlayerIntent add player {firstName}
 AddPlayerIntent add {firstName}
 AddPlayerIntent new player {firstName}
 
+IncreaseScoreForIntent add {scoreAmount} points to {firstName} score
+
 GetScoreForIntent get score for {firstName}
 GetScoreForIntent score for {firstName}
 GetScoreForIntent {firstName} score
