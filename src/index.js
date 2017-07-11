@@ -11,6 +11,10 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 
+var state = {
+    players: []
+}
+
 var handlers = {
     'LaunchRequest': function () {
         this.emit(':tell', 'Welcome to Game Keeper!');
@@ -19,13 +23,13 @@ var handlers = {
     'AddPlayerIntent': function () {
         var playerName = this.event.request.intent.slots.firstName.value;
 
-        this.attributes['players'].push(playerName);
+        state.players.push(playerName);
 
         this.emit(':tell', playerName + ' added to the roster.');
     },
 
     'ListPlayersIntent': function() {
-        this.emit(':tell', 'The roster includes: ' + this.attributes['players'].join(', '));
+        this.emit(':tell', 'The roster includes: ' + state.players.join(', '));
     }
 };
 
