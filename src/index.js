@@ -17,7 +17,7 @@ var state = {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit(':tell', 'Welcome to Game Keeper!');
+        this.emit(':tell', 'Welcome to Game Keeper! You can count on me to keep track of who is playing and the current score! Let the games begin!');
     },
 
     'AddPlayerIntent': function () {
@@ -68,4 +68,3 @@ var handlers = {
         this.emit(':tell', 'Player roster is now reset!');
     }
 };
-
