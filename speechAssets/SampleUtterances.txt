@@ -1,15 +1,15 @@
 AddPlayerIntent add new player {firstName}
 AddPlayerIntent new player {firstName}
 
-DecreaseScoreForIntent add negative {scoreAmount} points to {firstName} score
-DecreaseScoreForIntent subtract {scoreAmount} points from {firstName} score
-DecreaseScoreForIntent remove {scoreAmount} points from {firstName} score
+DecreaseScoreForIntent add negative {scoreAmount} points to {firstName}
+DecreaseScoreForIntent subtract {scoreAmount} points from {firstName}
+DecreaseScoreForIntent remove {scoreAmount} points from {firstName}
 
-IncreaseScoreForIntent to add {scoreAmount} points to {firstName} score
+IncreaseScoreForIntent to add {scoreAmount} points to {firstName}
 IncreaseScoreForIntent {scoreAmount} points to {firstName}
 IncreaseScoreForIntent {scoreAmount} points for {firstName}
 
-GetScoreForIntent what is {firstName}'s score
+GetScoreForIntent what is {firstName} score
 GetScoreForIntent get score for {firstName}
 GetScoreForIntent score for {firstName}
 GetScoreForIntent {firstName} score
