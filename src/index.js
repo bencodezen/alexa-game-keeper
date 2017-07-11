@@ -13,11 +13,16 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('MyIntent');
+        this.emit(':tell', 'Welcome to Game Keeper!');
     },
 
-    'MyIntent': function () {
-        this.emit(':tell', 'Hello World from Alexa');
+    'AddPlayerIntent': function () {
+        var playerName = this.event.request.intent.slots.firstName.value;
+
+        this.attributes['players'] = [];
+        this.attributes['players'].push(playerName);
+
+        this.emit(':tell', playerName + ' added to the roster.');
     }
 };
 

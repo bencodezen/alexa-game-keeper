@@ -1,1 +1,3 @@
-MyIntent hello
+AddPlayerIntent add player {firstName}
+AddPlayerIntent add {firstName}
+AddPlayerIntent new player {firstName}
