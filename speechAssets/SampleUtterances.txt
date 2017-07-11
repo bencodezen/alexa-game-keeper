@@ -5,10 +5,11 @@ DecreaseScoreForIntent add negative {scoreAmount} points to {firstName} score
 DecreaseScoreForIntent subtract {scoreAmount} points from {firstName} score
 DecreaseScoreForIntent remove {scoreAmount} points from {firstName} score
 
-IncreaseScoreForIntent add {scoreAmount} points to {firstName} score
+IncreaseScoreForIntent to add {scoreAmount} points to {firstName} score
 IncreaseScoreForIntent {scoreAmount} points to {firstName}
 IncreaseScoreForIntent {scoreAmount} points for {firstName}
 
+GetScoreForIntent what is {firstName}'s score
 GetScoreForIntent get score for {firstName}
 GetScoreForIntent score for {firstName}
 GetScoreForIntent {firstName} score
