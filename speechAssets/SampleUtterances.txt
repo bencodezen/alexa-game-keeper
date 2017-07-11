@@ -2,6 +2,10 @@ AddPlayerIntent add player {firstName}
 AddPlayerIntent add {firstName}
 AddPlayerIntent new player {firstName}
 
+GetScoreForIntent get score for {firstName}
+GetScoreForIntent score for {firstName}
+GetScoreForIntent {firstName} score
+
 ListPlayersIntent list players
 ListPlayersIntent who is playing
 ListPlayersIntent who is on the roster

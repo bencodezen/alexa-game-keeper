@@ -10,6 +10,15 @@
       ]
     },
     {
+      "intent": "GetScoreForIntent",
+      "slots": [
+          {
+            "name": "firstName",
+            "type": "AMAZON.US_FIRST_NAME"
+          }
+      ]
+    },
+    {
       "intent": "ListPlayersIntent"
     },
     {

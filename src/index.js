@@ -24,8 +24,18 @@ var handlers = {
         var playerName = this.event.request.intent.slots.firstName.value;
 
         state.players.push(playerName);
+        state[playerName] = {
+            "score": 0
+        };
 
         this.emit(':tell', playerName + ' added to the roster.');
+    },
+
+    'GetScoreForIntent': function() {
+        var playerName = this.event.request.intent.slots.firstName.value;
+        var playerScore = state[playerName].score;
+
+        this.emit(':tell', playerName + ' score is ' + playerScore);
     },
 
     'ListPlayersIntent': function() {
