@@ -58,6 +58,14 @@ var handlers = {
 
     'ListPlayersIntent': function() {
         this.emit(':tell', 'The roster includes: ' + state.players.join(', '));
+    },
+
+    'ResetPlayersIntent': function() {
+        state = {
+            players: []
+        };
+
+        this.emit(':tell', 'Player roster is now reset!');
     }
 };
 

@@ -16,3 +16,6 @@ GetScoreForIntent {firstName} score
 ListPlayersIntent list players
 ListPlayersIntent who is playing
 ListPlayersIntent who is on the roster
+
+ResetPlayersIntent reset players
+ResetPlayersIntent remove all players

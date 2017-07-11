@@ -48,6 +48,9 @@
       "intent": "ListPlayersIntent"
     },
     {
+      "intent": "ResetPlayersIntent"
+    },
+    {
       "intent": "AMAZON.HelpIntent"
     },
     {
