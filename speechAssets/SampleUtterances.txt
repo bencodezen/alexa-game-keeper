@@ -1,3 +1,7 @@
 AddPlayerIntent add player {firstName}
 AddPlayerIntent add {firstName}
 AddPlayerIntent new player {firstName}
+
+ListPlayersIntent list players
+ListPlayersIntent who is playing
+ListPlayersIntent who is on the roster

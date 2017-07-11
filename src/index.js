@@ -19,10 +19,13 @@ var handlers = {
     'AddPlayerIntent': function () {
         var playerName = this.event.request.intent.slots.firstName.value;
 
-        this.attributes['players'] = [];
         this.attributes['players'].push(playerName);
 
         this.emit(':tell', playerName + ' added to the roster.');
+    },
+
+    'ListPlayersIntent': function() {
+        this.emit(':tell', 'The roster includes: ' + this.attributes['players'].join(', '));
     }
 };
 
